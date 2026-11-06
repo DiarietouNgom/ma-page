@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(to bottom, #813b20, #1a0c08);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #FFD52A;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px 30px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#competences > div {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover {
+    color: #FFD52A;
+    transition: color 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #menu-toggle {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #FFD52A;
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    #menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #menu.menu-ouvert {
+    display: flex;
+    }
+
+    .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    }
+
+    .header-mobile h1 {
+    font-size: 18px;
+    }
+
+    #menu-toggle {
+    margin: 0;
+    }
+}
+
+#presentation img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 0;
+}
+
+#presentation img {
+    margin-bottom: 0;
+}
+
+#presentation {
+    padding-bottom: 0;
+}
+
+#competences {
+    padding-top: 10px;
+}
+
+#competences h2 {
+    margin-top: 0;
+}
