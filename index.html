@@ -2,109 +2,136 @@
 <html lang="fr">
 
 <head>
-    <title>porfolio de Diarietou Ngom</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
-
+    <meta name="description" content="Portfolio de Diarietou Ngom, étudiante en marketing et stratégie, passionnée par le digital, la création graphique et le développement web.">
+    <title>Portfolio de Diarietou Ngom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Signale au CSS que JavaScript est actif (le menu mobile reste visible sans JS) -->
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
     <header>
-        <div class="header-mobile">
-           <h1>Diarietou Ngom</h1>
-           <button id="menu-toggle">☰ Menu</button>
+        <div class="header-bar">
+            <h1>Diarietou Ngom</h1>
+            <button id="menu-toggle" type="button" aria-controls="menu" aria-expanded="false">
+                <span class="menu-icone" aria-hidden="true">☰</span>
+                <span class="menu-texte">Menu</span>
+            </button>
         </div>
 
+        <nav aria-label="Navigation principale">
+            <ul id="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        
-         <ul id="menu">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="accueil">
-    <h2>Bienvenue sur mon portfolio</h2>
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-texte">
+                <p class="hero-salutation">Bonjour, je suis Diarietou&nbsp;👋</p>
+                <h2 class="hero-titre">
+                    Étudiante en <span class="surligne">marketing digital</span>
+                    passionnée par la création web
+                </h2>
+                <p class="hero-accroche">
+                    Je conçois des visuels, des contenus et des sites web pour aider les marques
+                    à se démarquer en ligne. Curieuse et motivée, j'aime apprendre, découvrir
+                    de nouveaux outils et relever de nouveaux défis.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="bouton bouton-principal">Me contacter</a>
+                    <a href="#competences" class="bouton bouton-secondaire">Voir mes compétences</a>
+                </div>
+            </div>
+            <img class="hero-photo" src="images/photo-profil.jpg" alt="Portrait de Diarietou Ngom" width="400" height="400">
+        </section>
 
-    <p>Je m'appelle Diarietou Ngom, étudiante en marketing et stratégie, passionnée par le digital et les nouvelles technologies. Je développe progressivement mes compétences dans le domaine du web et du marketing à travers des formations et des projets pratiques. Curieuse et motivée, j'aime apprendre, découvrir de nouveaux outils et relever de nouveaux défis.</p>
-</section>
-<section id="presentation">
-    <h2>A propos de moi</h2>
-    <p>Je suis une personne curieuse, sérieuse et motivée, qui aime apprendre et développer de nouvelles compétences. Mon parcours en marketing et stratégie m'a permis de découvrir l'univers du digital et de la communication. Je m'intéresse particulièrement aux outils numériques, à la création de contenus et au développement web. Mon objectif est de continuer à apprendre, à pratiquer et à évoluer dans ces domaines.</p>
-    <img src="images/a6f588ad-cca3-4d5a-89ee-14ddfc308e8d.jpg" alt="photo de presentation">
-</section>
-<section id="competences">
-    <h2>Mes compétences</h2>
-    
-    <p>
-        Au cours de ma formation et de mes expériences pratiques,
-        j'ai développé des compétences en marketing digital,
-        en création graphique et en développement web.
-    </p>
+        <section id="presentation">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis une personne curieuse, sérieuse et motivée, qui aime apprendre et développer de
+                nouvelles compétences. Mon parcours en marketing et stratégie m'a permis de découvrir l'univers
+                du digital et de la communication. Je m'intéresse particulièrement aux outils numériques, à la
+                création de contenus et au développement web. Mon objectif est de continuer à apprendre,
+                à pratiquer et à évoluer dans ces domaines.
+            </p>
+        </section>
 
-    <div>
-        <h3>Marketing digital et création graphique</h3>
-        <ul>
-            <li>Utilisation de Canva</li>
-            <li>Création de carrousels</li>
-            <li>Création d'affiches et de cartes</li>
-            <li>Création de logos</li>
-        </ul>
-    </div>
+        <section id="competences">
+            <h2>Mes compétences</h2>
+            <p>
+                Au cours de ma formation et de mes expériences pratiques,
+                j'ai développé des compétences en marketing digital,
+                en création graphique et en développement web.
+            </p>
 
-    <div>
-        <h3>Développement web</h3>
-        <ul>
-            <li>HTML et CSS</li>
-            <li>JavaScript</li>
-            <li>Création de sites web</li>
-        </ul>
-    </div>
+            <div class="grille-competences">
+                <article class="carte-competence">
+                    <h3>Marketing digital et création graphique</h3>
+                    <ul>
+                        <li>Utilisation de Canva</li>
+                        <li>Création de carrousels</li>
+                        <li>Création d'affiches et de cartes</li>
+                        <li>Création de logos</li>
+                    </ul>
+                </article>
 
-    <div>
-        <h3>Outils numériques et intelligence artificielle</h3>
-        <ul>
-            <li>Claude et Claude Code</li>
-            <li>Visual Studio Code</li>
-            <li>Git et GitHub</li>
-        </ul>
-    </div>
+                <article class="carte-competence">
+                    <h3>Développement web</h3>
+                    <ul>
+                        <li>HTML et CSS</li>
+                        <li>JavaScript</li>
+                        <li>Création de sites web</li>
+                    </ul>
+                </article>
 
-    <div>
-        <h3>Organisation et collaboration</h3>
-        <ul>
-            <li>Utilisation de Notion</li>
-            <li>Utilisation de Slack</li>
-        </ul>
-    </div>
-</section>
-<section id="contact">
-    <h2>Me contacter</h2>
+                <article class="carte-competence">
+                    <h3>Outils numériques et intelligence artificielle</h3>
+                    <ul>
+                        <li>Claude et Claude Code</li>
+                        <li>Visual Studio Code</li>
+                        <li>Git et GitHub</li>
+                    </ul>
+                </article>
 
-    <p>
-        Vous souhaitez échanger avec moi ou discuter d'un projet ?
-        N'hésitez pas à me contacter.
-    </p>
+                <article class="carte-competence">
+                    <h3>Organisation et collaboration</h3>
+                    <ul>
+                        <li>Utilisation de Notion</li>
+                        <li>Utilisation de Slack</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <p>
-        Email :
-        <a href="mailto:ngomdiarietou25@gmail.com">ngomdiarietou25@gmail.com</a>
-    </p>
+        <section id="contact">
+            <h2>Me contacter</h2>
+            <p>
+                Vous souhaitez échanger avec moi ou discuter d'un projet ?
+                N'hésitez pas à me contacter.
+            </p>
+            <p>
+                Email :
+                <a href="mailto:ngomdiarietou25@gmail.com">ngomdiarietou25@gmail.com</a>
+            </p>
+            <p>
+                GitHub :
+                <a href="https://github.com/DiarietouNgom" target="_blank" rel="noopener noreferrer">
+                    Voir mon profil GitHub
+                </a>
+            </p>
+        </section>
+    </main>
 
-    <p>
-        GitHub :
-        <a href="https://github.com/DiarietouNgom" target="_blank">
-            Voir mon profil GitHub
-        </a>
-    </p>
-</section>
-
-<footer>
-    <p>&copy; 2026 Diarietou Ngom - Tous droits réservés.</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Diarietou Ngom - Tous droits réservés.</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
