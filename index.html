@@ -2,109 +2,427 @@
 <html lang="fr">
 
 <head>
-    <title>porfolio de Diarietou Ngom</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+    <title>Diarietou Ngom · Marketing digital, création graphique et web</title>
+    <meta name="description" content="Portfolio de Diarietou Ngom : carrousels pour les réseaux sociaux, affiches, visuels de marque et sites web. Étudiante en marketing et stratégie.">
+    <meta name="theme-color" content="#1a0f0b">
 
+    <!-- Aperçu lors d'un partage (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Diarietou Ngom · Marketing digital, création graphique et web">
+    <meta property="og:description" content="Carrousels, affiches, visuels de marque et sites web : découvrez mes réalisations.">
+    <!-- Une fois le site en ligne, ajouter l'adresse complète de l'image :
+    <meta property="og:image" content="https://VOTRE-ADRESSE/images/photo-profil.jpg"> -->
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a0f0b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='%23FFD52A'%3EDN%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Signale au CSS que JavaScript est actif (sans JS, le menu et le contenu restent visibles) -->
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
-    <header>
-        <div class="header-mobile">
-           <h1>Diarietou Ngom</h1>
-           <button id="menu-toggle">☰ Menu</button>
+    <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+    <header class="entete">
+        <div class="conteneur entete-contenu">
+            <a class="logo" href="#accueil">Diarietou<span class="logo-point">.</span>Ngom</a>
+
+            <button id="menu-toggle" class="menu-bouton" type="button" aria-controls="menu" aria-expanded="false">
+                <span class="menu-icone" aria-hidden="true">☰</span>
+                <span class="menu-texte">Menu</span>
+            </button>
+
+            <nav class="navigation" aria-label="Navigation principale">
+                <ul id="menu" class="menu">
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#presentation">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#contact" class="menu-contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
+    <main id="contenu">
+        <!-- ============================== ACCUEIL ============================== -->
+        <section id="accueil" class="hero">
+            <div class="conteneur hero-contenu">
+                <div class="hero-texte">
+                    <p class="sur-titre"><span class="insecable">Marketing digital ·</span> <span class="insecable">Création graphique · Web</span></p>
+                    <h1 class="hero-titre">
+                        Je crée des <span class="surligne">visuels</span> et des <span class="surligne insecable">sites web</span>
+                        qui donnent vie aux marques.
+                    </h1>
+                    <p class="hero-accroche">
+                        Je m’appelle Diarietou Ngom, étudiante en marketing et stratégie.
+                        Je conçois des carrousels pour les réseaux sociaux, des affiches
+                        et des sites vitrines, de l’idée jusqu’au résultat final.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projets" class="bouton bouton-principal">Voir mes projets</a>
+                        <a href="#contact" class="bouton bouton-secondaire">Me contacter</a>
+                    </div>
+                </div>
 
-    <nav>
-        
-         <ul id="menu">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="accueil">
-    <h2>Bienvenue sur mon portfolio</h2>
+                <div class="hero-visuel">
+                    <img class="hero-photo" src="images/photo-profil.jpg" alt="Portrait de Diarietou Ngom"
+                        width="400" height="400" fetchpriority="high">
+                </div>
+            </div>
+        </section>
 
-    <p>Je m'appelle Diarietou Ngom, étudiante en marketing et stratégie, passionnée par le digital et les nouvelles technologies. Je développe progressivement mes compétences dans le domaine du web et du marketing à travers des formations et des projets pratiques. Curieuse et motivée, j'aime apprendre, découvrir de nouveaux outils et relever de nouveaux défis.</p>
-</section>
-<section id="presentation">
-    <h2>A propos de moi</h2>
-    <p>Je suis une personne curieuse, sérieuse et motivée, qui aime apprendre et développer de nouvelles compétences. Mon parcours en marketing et stratégie m'a permis de découvrir l'univers du digital et de la communication. Je m'intéresse particulièrement aux outils numériques, à la création de contenus et au développement web. Mon objectif est de continuer à apprendre, à pratiquer et à évoluer dans ces domaines.</p>
-    <img src="images/a6f588ad-cca3-4d5a-89ee-14ddfc308e8d.jpg" alt="photo de presentation">
-</section>
-<section id="competences">
-    <h2>Mes compétences</h2>
-    
-    <p>
-        Au cours de ma formation et de mes expériences pratiques,
-        j'ai développé des compétences en marketing digital,
-        en création graphique et en développement web.
-    </p>
+        <!-- ============================== PROJETS ============================== -->
+        <section id="projets" class="section section-alt">
+            <div class="conteneur">
+                <header class="section-entete reveler">
+                    <p class="sur-titre">01 — Projets</p>
+                    <h2>Mes réalisations</h2>
+                    <p class="section-intro">
+                        Une sélection de travaux pour des marques et des entreprises :
+                        contenus pour les réseaux sociaux, supports visuels et site web.
+                    </p>
+                </header>
 
-    <div>
-        <h3>Marketing digital et création graphique</h3>
-        <ul>
-            <li>Utilisation de Canva</li>
-            <li>Création de carrousels</li>
-            <li>Création d'affiches et de cartes</li>
-            <li>Création de logos</li>
-        </ul>
-    </div>
+                <div class="grille-projets">
+                    <!-- Projet 1 : carrousel M-IT Technology -->
+                    <article class="projet reveler">
+                        <div class="projet-visuel projet-visuel--pile">
+                            <img src="images/projets/mit-carrousel-3.jpg" alt="" width="800" height="1000" loading="lazy">
+                            <img src="images/projets/mit-carrousel-2.jpg" alt="" width="800" height="1000" loading="lazy">
+                            <img src="images/projets/mit-carrousel-1.jpg" alt="Couverture du carrousel « Transformation digitale : par où commencer ? »" width="800" height="1000" loading="lazy">
+                        </div>
+                        <div class="projet-texte">
+                            <p class="projet-categorie">Carrousel · Réseaux sociaux</p>
+                            <h3>
+                                <button class="projet-lien" type="button" data-dialog="dialog-mit">
+                                    Transformation digitale : par où commencer ?
+                                </button>
+                            </h3>
+                            <p>Un guide en cinq visuels pour M-IT Technology, société de services informatiques.</p>
+                            <span class="projet-plus" aria-hidden="true">Voir le projet →</span>
+                        </div>
+                    </article>
 
-    <div>
-        <h3>Développement web</h3>
-        <ul>
-            <li>HTML et CSS</li>
-            <li>JavaScript</li>
-            <li>Création de sites web</li>
-        </ul>
-    </div>
+                    <!-- Projet 2 : site Sokhna Maïbijoux -->
+                    <article class="projet reveler">
+                        <div class="projet-visuel projet-visuel--navigateur">
+                            <div class="navigateur">
+                                <div class="navigateur-barre" aria-hidden="true"><span></span><span></span><span></span></div>
+                                <img src="images/projets/sokhna-maibijoux.jpg" alt="Page « Nos bijoux » du site Sokhna Maïbijoux" width="1200" height="538" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="projet-texte">
+                            <p class="projet-categorie">Site web · HTML et CSS</p>
+                            <h3>
+                                <button class="projet-lien" type="button" data-dialog="dialog-sokhna">
+                                    Sokhna Maïbijoux
+                                </button>
+                            </h3>
+                            <p>Un site vitrine pour une boutique de bijoux, avec commande via WhatsApp.</p>
+                            <span class="projet-plus" aria-hidden="true">Voir le projet →</span>
+                        </div>
+                    </article>
 
-    <div>
-        <h3>Outils numériques et intelligence artificielle</h3>
-        <ul>
-            <li>Claude et Claude Code</li>
-            <li>Visual Studio Code</li>
-            <li>Git et GitHub</li>
-        </ul>
-    </div>
+                    <!-- Projet 3 : Yiriba -->
+                    <article class="projet reveler">
+                        <div class="projet-visuel">
+                            <img class="projet-affiche" src="images/projets/yiriba-manifesto.jpg" alt="Visuel manifeste de la marque Yiriba" width="800" height="1000" loading="lazy">
+                        </div>
+                        <div class="projet-texte">
+                            <p class="projet-categorie">Visuel de marque</p>
+                            <h3>
+                                <button class="projet-lien" type="button" data-dialog="dialog-yiriba">
+                                    Yiriba, le manifeste
+                                </button>
+                            </h3>
+                            <p>Un visuel qui exprime l’univers émotionnel d’une marque de bijoux.</p>
+                            <span class="projet-plus" aria-hidden="true">Voir le projet →</span>
+                        </div>
+                    </article>
 
-    <div>
-        <h3>Organisation et collaboration</h3>
-        <ul>
-            <li>Utilisation de Notion</li>
-            <li>Utilisation de Slack</li>
-        </ul>
-    </div>
-</section>
-<section id="contact">
-    <h2>Me contacter</h2>
+                    <!-- Projet 4 : SimPamboul -->
+                    <article class="projet reveler">
+                        <div class="projet-visuel">
+                            <img class="projet-affiche" src="images/projets/simpamboul-teranga.jpg" alt="Affiche du Lotissement Teranga pour SimPamboul" width="800" height="1000" loading="lazy">
+                        </div>
+                        <div class="projet-texte">
+                            <p class="projet-categorie">Affiche · Immobilier</p>
+                            <h3>
+                                <button class="projet-lien" type="button" data-dialog="dialog-simpamboul">
+                                    SimPamboul, Lotissement Teranga
+                                </button>
+                            </h3>
+                            <p>Une affiche promotionnelle qui rend une offre immobilière claire et attractive.</p>
+                            <span class="projet-plus" aria-hidden="true">Voir le projet →</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
-    <p>
-        Vous souhaitez échanger avec moi ou discuter d'un projet ?
-        N'hésitez pas à me contacter.
-    </p>
+            <!-- ===== Fenêtres de détail des projets ===== -->
+            <dialog id="dialog-mit" class="fenetre" aria-labelledby="titre-mit">
+                <div class="fenetre-contenu">
+                    <button class="fenetre-fermer" type="button" aria-label="Fermer">✕</button>
+                    <p class="projet-categorie">Carrousel · Facebook, Instagram, LinkedIn</p>
+                    <h3 id="titre-mit">Transformation digitale : par où commencer ?</h3>
+                    <div class="galerie" tabindex="0" aria-label="Les cinq visuels du carrousel (faire défiler)">
+                        <img src="images/projets/mit-carrousel-1.jpg" alt="Visuel 1 : Transformation digitale, par où commencer ?" width="800" height="1000" loading="lazy">
+                        <img src="images/projets/mit-carrousel-2.jpg" alt="Visuel 2 : Identifier les problèmes" width="800" height="1000" loading="lazy">
+                        <img src="images/projets/mit-carrousel-3.jpg" alt="Visuel 3 : Définir les priorités" width="800" height="1000" loading="lazy">
+                        <img src="images/projets/mit-carrousel-4.jpg" alt="Visuel 4 : Choisir la bonne solution" width="800" height="1000" loading="lazy">
+                        <img src="images/projets/mit-carrousel-5.jpg" alt="Visuel 5 : Déployer et mesurer" width="800" height="1000" loading="lazy">
+                    </div>
+                    <dl class="fiche">
+                        <div><dt>Client</dt><dd>M-IT Technology</dd></div>
+                        <div><dt>Format</dt><dd>Cinq visuels 4:5 (1080 × 1350)</dd></div>
+                    </dl>
+                    <h4>L’objectif</h4>
+                    <p>Expliquer simplement aux dirigeants d’entreprise comment démarrer leur transformation digitale, et passer de l’idée à l’action.</p>
+                    <h4>Ce que j’ai réalisé</h4>
+                    <!-- À COMPLÉTER : préciser votre rôle exact et les outils utilisés -->
+                    <ul>
+                        <li>Un message découpé en cinq étapes : accroche, problèmes, priorités, solutions, déploiement.</li>
+                        <li>Une mise en page dans la charte graphique de M-IT, avec des pictogrammes pour chaque idée clé.</li>
+                        <li>Des textes courts et contrastés, lisibles sur un écran de téléphone.</li>
+                    </ul>
+                </div>
+            </dialog>
 
-    <p>
-        Email :
-        <a href="mailto:ngomdiarietou25@gmail.com">ngomdiarietou25@gmail.com</a>
-    </p>
+            <dialog id="dialog-sokhna" class="fenetre" aria-labelledby="titre-sokhna">
+                <div class="fenetre-contenu">
+                    <button class="fenetre-fermer" type="button" aria-label="Fermer">✕</button>
+                    <p class="projet-categorie">Site web · HTML et CSS</p>
+                    <h3 id="titre-sokhna">Sokhna Maïbijoux</h3>
+                    <img class="fenetre-image" src="images/projets/sokhna-maibijoux.jpg" alt="Page « Nos bijoux » du site Sokhna Maïbijoux" width="1200" height="538" loading="lazy">
+                    <dl class="fiche">
+                        <div><dt>Type</dt><dd>Site vitrine de 4 pages</dd></div>
+                        <div><dt>Technologies</dt><dd>HTML, CSS</dd></div>
+                    </dl>
+                    <h4>L’objectif</h4>
+                    <p>Présenter les bijoux d’une boutique en ligne et permettre aux clientes de commander facilement.</p>
+                    <h4>Ce que j’ai réalisé</h4>
+                    <ul>
+                        <li>Quatre pages : accueil, catalogue des bijoux, à propos et contact.</li>
+                        <li>Un catalogue classé par catégories : colliers, bracelets, boucles d’oreilles et bagues.</li>
+                        <li>Un bouton « Commander » et un accès direct à WhatsApp pour passer commande.</li>
+                        <li>Un univers élégant : tons crème et rose poudré, titres dorés.</li>
+                    </ul>
+                    <p>
+                        <a class="bouton bouton-secondaire" href="https://github.com/DiarietouNgom/bijoux" target="_blank" rel="noopener noreferrer">Voir le code sur GitHub</a>
+                    </p>
+                </div>
+            </dialog>
 
-    <p>
-        GitHub :
-        <a href="https://github.com/DiarietouNgom" target="_blank">
-            Voir mon profil GitHub
-        </a>
-    </p>
-</section>
+            <dialog id="dialog-yiriba" class="fenetre" aria-labelledby="titre-yiriba">
+                <div class="fenetre-contenu">
+                    <button class="fenetre-fermer" type="button" aria-label="Fermer">✕</button>
+                    <p class="projet-categorie">Visuel de marque</p>
+                    <h3 id="titre-yiriba">Yiriba, le manifeste</h3>
+                    <img class="fenetre-image fenetre-image--affiche" src="images/projets/yiriba-manifesto.jpg" alt="Visuel manifeste de la marque Yiriba : « Il existe des bijoux que l’on porte. Et d’autres qui racontent quelque chose de nous. »" width="800" height="1000" loading="lazy">
+                    <dl class="fiche">
+                        <div><dt>Client</dt><dd>Yiriba, « Créateur d’émotions »</dd></div>
+                        <div><dt>Format</dt><dd>Visuel 4:5 pour les réseaux sociaux</dd></div>
+                    </dl>
+                    <h4>L’objectif</h4>
+                    <p>Faire ressentir l’identité de la marque : des bijoux qui racontent une histoire, pas de simples accessoires.</p>
+                    <h4>Ce que j’ai réalisé</h4>
+                    <ul>
+                        <li>Une composition qui place le bijou au centre du regard.</li>
+                        <li>Une ambiance sombre et chaude, accordée aux couleurs du logo.</li>
+                        <li>Un message court, écrit comme un manifeste de marque.</li>
+                    </ul>
+                </div>
+            </dialog>
 
-<footer>
-    <p>&copy; 2026 Diarietou Ngom - Tous droits réservés.</p>
-</footer>
+            <dialog id="dialog-simpamboul" class="fenetre" aria-labelledby="titre-simpamboul">
+                <div class="fenetre-contenu">
+                    <button class="fenetre-fermer" type="button" aria-label="Fermer">✕</button>
+                    <p class="projet-categorie">Affiche · Immobilier</p>
+                    <h3 id="titre-simpamboul">SimPamboul, Lotissement Teranga</h3>
+                    <img class="fenetre-image fenetre-image--affiche" src="images/projets/simpamboul-teranga.jpg" alt="Affiche du Lotissement Teranga : parcelles de 150 m² à Diender, à partir de 3 000 000 FCFA" width="800" height="1000" loading="lazy">
+                    <dl class="fiche">
+                        <div><dt>Client</dt><dd>SimPamboul</dd></div>
+                        <div><dt>Format</dt><dd>Affiche promotionnelle</dd></div>
+                    </dl>
+                    <h4>L’objectif</h4>
+                    <p>Présenter l’offre du Lotissement Teranga et donner envie de prendre contact.</p>
+                    <h4>Ce que j’ai réalisé</h4>
+                    <ul>
+                        <li>Une hiérarchie claire : nom du projet, prix, conditions de paiement, puis coordonnées.</li>
+                        <li>Le prix et les facilités de paiement mis en avant pour lever les freins à l’achat.</li>
+                        <li>Des pictogrammes pour lire l’essentiel en un coup d'œil.</li>
+                        <li>Un slogan en wolof, « Sama suuf sama euleuk », pour parler directement au public local.</li>
+                    </ul>
+                </div>
+            </dialog>
+        </section>
+
+        <!-- ============================== À PROPOS ============================== -->
+        <section id="presentation" class="section">
+            <div class="conteneur apropos">
+                <div class="apropos-texte reveler">
+                    <p class="sur-titre">02 — À propos</p>
+                    <h2>Entre stratégie et création</h2>
+                    <p>
+                        Mon parcours en marketing et stratégie m’a fait découvrir l’univers du digital
+                        et de la communication. J’ai choisi d’aller plus loin que la théorie : aujourd’hui,
+                        je crée moi-même des contenus pour les réseaux sociaux, des supports visuels et des sites web.
+                    </p>
+                    <p>
+                        Je me forme en continu au développement web et aux outils numériques,
+                        y compris l’intelligence artificielle, pour proposer des réalisations à la fois
+                        belles, claires et efficaces.
+                    </p>
+                    <!-- À AJOUTER quand le CV est prêt (placer le fichier dans un dossier "documents") :
+                    <a class="bouton bouton-secondaire" href="documents/CV-Diarietou-Ngom.pdf" download>Télécharger mon CV</a> -->
+                </div>
+
+                <aside class="en-bref reveler" aria-label="En bref">
+                    <h3>En bref</h3>
+                    <dl>
+                        <div><dt>Formation</dt><dd>Marketing et stratégie, UNIPRO</dd></div>
+                        <div><dt>Expérience</dt><dd>Stage en infographie, Galsen Digital Agency</dd></div>
+                        <div><dt>Spécialités</dt><dd>Réseaux sociaux, design graphique, sites web</dd></div>
+                        <div><dt>Outils</dt><dd>Canva, HTML, CSS, JavaScript, Git</dd></div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============================== COMPÉTENCES ============================== -->
+        <section id="competences" class="section section-alt">
+            <div class="conteneur">
+                <header class="section-entete reveler">
+                    <p class="sur-titre">03 — Compétences</p>
+                    <h2>Ce que je sais faire</h2>
+                </header>
+
+                <div class="grille-competences">
+                    <article class="competence reveler">
+                        <svg class="competence-icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                        <h3>Contenus et design graphique</h3>
+                        <p>Des visuels qui attirent l'œil et transmettent un message clair.</p>
+                        <ul class="liste-points">
+                            <li>Carrousels pour les réseaux sociaux</li>
+                            <li>Affiches et cartes</li>
+                            <li>Logos et visuels de marque</li>
+                        </ul>
+                        <ul class="badges" aria-label="Outils">
+                            <li>Canva</li>
+                        </ul>
+                    </article>
+
+                    <article class="competence reveler">
+                        <svg class="competence-icone" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3>Développement web</h3>
+                        <p>Des sites vitrines modernes, rapides et adaptés au téléphone.</p>
+                        <ul class="liste-points">
+                            <li>Intégration de maquettes</li>
+                            <li>Sites adaptés à tous les écrans</li>
+                            <li>Interactions en JavaScript</li>
+                        </ul>
+                        <ul class="badges" aria-label="Technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git et GitHub</li>
+                        </ul>
+                    </article>
+
+                    <article class="competence reveler">
+                        <svg class="competence-icone" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        <h3>Outils et méthodes</h3>
+                        <p>Une organisation efficace et des outils modernes, dont l’IA.</p>
+                        <ul class="liste-points">
+                            <li>Travail assisté par l’intelligence artificielle</li>
+                            <li>Organisation de projets</li>
+                            <li>Collaboration en équipe</li>
+                        </ul>
+                        <ul class="badges" aria-label="Outils">
+                            <li>Claude</li>
+                            <li>Claude Code</li>
+                            <li>VS Code</li>
+                            <li>Notion</li>
+                            <li>Slack</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== PARCOURS ============================== -->
+        <section id="parcours" class="section">
+            <div class="conteneur">
+                <header class="section-entete reveler">
+                    <p class="sur-titre">04 — Parcours</p>
+                    <h2>Expérience et formation</h2>
+                </header>
+
+                <ol class="frise">
+                    <li class="frise-etape reveler">
+                        <p class="frise-date"><time datetime="2026-04-18">18 avril</time> – <time datetime="2026-07-31">31 juillet 2026</time></p>
+                        <h3>Stage professionnel d’adaptation en infographie</h3>
+                        <p class="frise-lieu">Galsen Digital Agency SAS</p>
+                        <ul class="liste-points">
+                            <li>Conception et réalisation de supports graphiques numériques</li>
+                            <li>Création de contenus visuels pour les réseaux sociaux</li>
+                            <li>Déclinaison de supports selon une identité visuelle et une charte graphique</li>
+                            <li>Compréhension et traitement de briefs créatifs</li>
+                            <li>Adaptation des créations aux différents formats et supports</li>
+                            <li>Participation aux projets de l’agence en situation professionnelle</li>
+                        </ul>
+                    </li>
+
+                    <li class="frise-etape reveler">
+                        <p class="frise-date"><time datetime="2026">2026</time></p>
+                        <h3>Formation en marketing et stratégie</h3>
+                        <p class="frise-lieu">UNIPRO, Université professionnelle</p>
+                        <p>Marketing, stratégie, communication et découverte de l’univers du digital.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================== CONTACT ============================== -->
+        <section id="contact" class="section section-alt">
+            <div class="conteneur">
+                <div class="contact-carte reveler">
+                    <p class="sur-titre">05 — Contact</p>
+                    <h2>Un projet, une question ? <span class="insecable">Parlons-en.</span></h2>
+                    <p class="section-intro">
+                        Je suis ouverte aux échanges, aux collaborations et aux nouvelles opportunités.
+                        Écrivez-moi, je vous réponds rapidement.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="bouton bouton-principal" href="mailto:ngomdiarietou25@gmail.com">Écrire un email</a>
+                        <button class="bouton bouton-secondaire" type="button" id="copier-email" data-email="ngomdiarietou25@gmail.com">
+                            Copier l’adresse
+                        </button>
+                    </div>
+                    <p class="contact-retour" id="copier-retour" role="status" aria-live="polite"></p>
+                    <ul class="contact-liens">
+                        <li><a href="mailto:ngomdiarietou25@gmail.com">ngomdiarietou25@gmail.com</a></li>
+                        <li><a href="https://github.com/DiarietouNgom" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied">
+        <div class="conteneur pied-contenu">
+            <p>&copy ; 2026 Diarietou Ngom. Conçu et développé en HTML, CSS et JavaScript.</p>
+            <a href="#accueil" class="pied-haut">Retour en haut ↑</a>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
